@@ -1,24 +1,3 @@
-// import { Navbar, Nav, Container } from 'react-bootstrap';
-
-// export default function AppNavbar() {
-//   return (
-//     <Navbar bg="dark" variant="dark" expand="lg">
-//       <Container>
-//         <Navbar.Brand href="/">Career Switch Tool</Navbar.Brand>
-//         <Navbar.Toggle aria-controls="basic-navbar-nav" />
-//         <Navbar.Collapse id="basic-navbar-nav">
-//           <Nav className="ms-auto">
-//             <Nav.Link href="/">Home</Nav.Link>
-//             <Nav.Link href="/results">Results</Nav.Link>
-//             <Nav.Link href="/admin">Admin</Nav.Link>
-//           </Nav>
-//         </Navbar.Collapse>
-//       </Container>
-//     </Navbar>
-//   );
-// }
-
-
 import React from "react";
 import { Navbar, Nav, NavDropdown, Button, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
@@ -29,15 +8,15 @@ const AppNavbar = () => {
       expand="lg"
       bg="white"
       fixed="top"
-      className="shadow-sm py-3 border-bottom border2 rounded-4"
+      className="shadow-sm  border-bottom border2 rounded-4"
     >
-      <Container>
+      <Container fluid>
         {/* Brand */}
         <Navbar.Brand href="#home" className="d-flex align-items-center">
           <img
             src="/src/assets/logo.webp"
             width="100"
-            height="30"
+            height="40"
             className="d-inline-block align-top"
             alt="Social Prachar"
           />
@@ -51,9 +30,9 @@ const AppNavbar = () => {
 
         {/* Navbar Links */}
         <Navbar.Collapse id="basic-navbar-nav" className="justify-content-end">
-          <Nav className="me-auto fw-semibold">
+          <Nav className="fw-semibold ms-3" >
             <NavDropdown
-              title={<span className="text-dark">About</span>}
+              title={<span className="text-dark ms-2">About</span>}
               id="about-nav-dropdown"
             >
               <NavDropdown.Item href="#about/action">Action</NavDropdown.Item>
@@ -67,7 +46,7 @@ const AppNavbar = () => {
             </NavDropdown>
 
             <NavDropdown
-              title={<span className="text-dark">Features</span>}
+              title={<span className="text-dark ms-2">Features</span>}
               id="features-nav-dropdown"
             >
               <NavDropdown.Item href="#features/action">Action</NavDropdown.Item>
@@ -81,7 +60,7 @@ const AppNavbar = () => {
             </NavDropdown>
 
             <NavDropdown
-              title={<span className="text-dark">AOL Partner Program</span>}
+              title={<span className="text-dark ms-2">AOL Partner Programs</span>}
               id="aol-nav-dropdown"
             >
               <NavDropdown.Item href="#aol/action">Action</NavDropdown.Item>
@@ -99,13 +78,15 @@ const AppNavbar = () => {
           <Nav className="align-items-center">
             <Button
               variant="info"
-              className="fw-bold rounded-pill px-4 me-3 shadow-sm text-white"
+              className="fw-bold rounded-pill px-4 me-2 shadow-sm text-white ms-5"
             >
               Join Now
             </Button>
+
+    
             <Nav.Link
               href="#login"
-              className="fw-semibold text-success px-3 rounded-pill border border-success"
+              className="fw-semibold text-success px-4 rounded-pill border border-success ms-2"
             >
               Log in
             </Nav.Link>

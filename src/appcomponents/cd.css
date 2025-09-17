@@ -1,0 +1,24 @@
+
+/* cd.css */
+.fixed-img {
+  height: 250px;
+  object-fit: cover;
+}
+
+.card-title {
+  min-height: 60px;
+}
+
+.card-text {
+  font-size: 1rem;
+}
+
+/* Attractive hover effect */
+.card-hover {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-10px) scale(1.03) rotateX(2deg) rotateY(2deg);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+}

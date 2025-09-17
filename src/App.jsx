@@ -3,7 +3,7 @@ import AppNavbar from "./components/Navbar";
 import Home from "./pages/Home";
 import Results from "./pages/Results";
 import Admin from "./pages/Admin";
-
+import "bootstrap/dist/css/bootstrap.min.css";
 function App() {
   return (
     <Router>

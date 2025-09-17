@@ -1,0 +1,10 @@
+.career-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  border-radius: 12px;
+}
+
+.career-card:hover {
+  transform: translateY(-10px) scale(1.03);
+  box-shadow: 0 15px 25px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+}

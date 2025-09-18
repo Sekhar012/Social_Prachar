@@ -3,11 +3,11 @@ import "bootstrap/dist/css/bootstrap.min.css";
 
 const About = () => {
   const supporters = [
-    { id: 1, logo: "https://via.placeholder.com/150x60?text=LTTech", name: "LTTech" },
-    { id: 2, logo: "https://via.placeholder.com/150x60?text=Women+Techmakers", name: "Women Techmakers" },
-    { id: 3, logo: "https://via.placeholder.com/150x60?text=Google", name: "Google" },
-    { id: 4, logo: "https://via.placeholder.com/150x60?text=Her+Zindagi", name: "HerZindagi" },
-    { id: 5, logo: "https://via.placeholder.com/150x60?text=SHEROES", name: "SHEROES" },
+    { id: 1, logo: "https://www.ltts.com/sites/default/files/media/media-kit/stacked.jpg", name: "LTTech" },
+    { id: 2, logo: "https://wtm-kolachi.github.io/WTM-Kolachi-Website/static/WTM-Main-6d61d484c7a6ecbd56ff9b6d88e9f4f3.svg", name: "Women Techmakers" },
+    { id: 3, logo: "https://t3.ftcdn.net/jpg/03/99/98/60/240_F_399986042_9iSLYUNyDv8npaKP31xsIpDVFjfqGLDF.jpg", name: "Google" },
+    { id: 4, logo: "https://upload.wikimedia.org/wikipedia/commons/d/d2/HerZindagi.png", name: "HerZindagi" },
+    { id: 5, logo: "https://media.licdn.com/dms/image/v2/C4D0BAQGUfCG652wHIg/company-logo_200_200/company-logo_200_200/0/1630505325297?e=1761177600&v=beta&t=7dvJC_KVbbbE6ftTXueuv_qUXe-V4MPAFj6N41UOJc8", name: "SHEROES" },
   ];
 
   return (

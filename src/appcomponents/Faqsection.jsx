@@ -41,11 +41,23 @@ const Faqsection = () => {
       question: "Can I generate more than one Social Prachar Report?",
       answer:"Yes, you can generate multiple Social Prachar Reports. Update your information or preferences at any time to create a new Report with fresh insights and recommendations..",
     },
-    {
-      id: 8,
-      question: "How can I get support if I have questions or issues?",
-      answer:"You can get in touch with our friendly team via support@kalido.me.",
-    },
+   {
+  id: 8,
+  question: "How can I get support if I have questions or issues?",
+  answer: (
+    <>
+      You can get in touch with our friendly team via{" "}
+      <a
+        href="mailto:support@kalido.me"
+        className=" text-primary fw-semibold"
+      >
+       rajasekhar@grs.me
+      </a>
+      .
+    </>
+  ),
+}
+
   ];
 
   const toggleFaq = (id) => {

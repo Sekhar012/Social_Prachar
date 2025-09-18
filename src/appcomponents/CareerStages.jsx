@@ -31,7 +31,7 @@ const CareerStages = () => {
       desc: "Stay ahead of industry trends, identify emerging leadership competencies, and discover opportunities to leverage your expertise in new and evolving roles.",
       img: "/src/assets/cs4.jpeg",
     },
-      {
+    {
       id: 5,
       label: "For Career Changers",
       title: "Strategically Navigate Career Transitions",
@@ -43,34 +43,33 @@ const CareerStages = () => {
   return (
     <section className="py-5">
       <div className="container">
-        {stages.map((stage, index) => (
-          <div className="row align-items-center mb-5" key={stage.id}>
-            {/* Text Block */}
-            <div
-              className={`col-md-6 ${
-                index % 2 === 1 ? "order-md-2" : ""
-              }`}
-            >
-              <p className="text-danger fw-semibold">{stage.label}</p>
-              <h4 className="fw-bold">{stage.title}</h4>
-              <p className="text-muted">{stage.desc}</p>
+        <div className="row g-4">
+          {stages.map((stage,) => (
+            <div className="col-md-6" key={stage.id}>
+              <div
+                className={`card h-100 shadow-sm border-4 border-start border-top-0 border-bottom-0 border-end-0 border-danger`}              
+              >
+                <div className="row g-0 h-100">
+                  {/* Image */}
+                  <div className="col-5 text-center d-flex align-items-center">
+                    <img
+                      src={stage.img}
+                      alt={stage.title}
+                      className="img-fluid rounded-start"
+                      style={{ height: "100%", objectFit: "cover" }}
+                    />
+                  </div>
+                  {/* Text */}
+                  <div className="col-7 d-flex flex-column justify-content-center p-3">
+                    <p className="text-danger fw-semibold mb-1">{stage.label}</p>
+                    <h5 className="fw-bold">{stage.title}</h5>
+                    <p className="text-muted small">{stage.desc}</p>
+                  </div>
+                </div>
+              </div>
             </div>
-
-            {/* Image Block */}
-            <div
-              className={`col-md-6 text-center ${
-                index % 2 === 1 ? "order-md-1" : ""
-              }`}
-            >
-              <img
-                src={stage.img}
-                alt={stage.title}
-                className="img-fluid rounded"
-                style={{ width: "100px", height: "250px", objectFit: "cover" }}
-              />
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

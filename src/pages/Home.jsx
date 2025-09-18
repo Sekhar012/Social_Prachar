@@ -9,6 +9,9 @@ import CareerStages from "../appcomponents/CareerStages";
 import About from "../appcomponents/About";
 import Testimonials from "../appcomponents/Testimonials";
 import Faqsection from "../appcomponents/Faqsection";
+import Ctasection from "../appcomponents/Ctasection";
+import Footer from "../components/Footer";
+import CareerBlueprint from "../appcomponents/CareerBlueprint";
 
 export default function Home() {
   return (
@@ -19,12 +22,18 @@ export default function Home() {
        < Cards/>
        <SecuritySection/>
        <SpAudience/>
-       {/* <CareerStages/> */}
-       {/* <About/> */}
+       <CareerStages/>
+       <CareerBlueprint/>
+       <About/>
        <Testimonials/>
       <Faqsection/>
+      <Ctasection/>
+      <Footer/>
+
+
       <h2>Career Switch Tool</h2>
       <CareerForm />
+
       
     </div>
   );

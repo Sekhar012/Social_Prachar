@@ -1,6 +1,7 @@
 
 import React from "react";
 import { NavLink } from "react-router-dom";
+
 const Banner = () => {
   return (
     <div className="text-center py-5 bg-white">

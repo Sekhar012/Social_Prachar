@@ -1,13 +1,13 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { NavLink } from "react-router-dom";
 const CareerBlueprint = () => {
   return (
     <div className="container py-5">
       <div className="row align-items-center">
         {/* Left Section */}
         <div className="col-md-6 mb-4 py-2">
-          <h2 className="text-primary">How LvLUP works</h2>
+          <h2 className="text-primary">How Social Prachar works</h2>
           <h1 className="fw-bold">
             From CV to <br /> Career Blueprint <br /> in Minutes
           </h1>
@@ -18,6 +18,9 @@ const CareerBlueprint = () => {
           {/* <button className="btn btn-warning fw-bold">
             Get My Free Career Report
           </button> */}
+
+          <NavLink 
+        to="/CareerForm">
            <button 
   className="btn btn-lg fw-semibold py-3 ms-3"
   style={{
@@ -40,6 +43,7 @@ const CareerBlueprint = () => {
 >
   Get My Free Career Report
 </button>
+</NavLink>
         </div>
 
          {/* Right Section */}

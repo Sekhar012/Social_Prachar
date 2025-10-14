@@ -44,13 +44,20 @@ const CareerStages = () => {
     <section className="py-5">
       <div className="container">
         <div className="row g-4">
-          {stages.map((stage,) => (
+          {stages.map((stage) => (
             <div className="col-md-6" key={stage.id}>
               <div
                 className={`card h-100 shadow-sm border-4 border-start border-top-0 border-bottom-0 border-end-0 border-danger`}              
               >
                 <div className="row g-0 h-100">
-                  {/* Image */}
+                   
+                  {/* Text */}
+                  <div className="col-7 d-flex flex-column justify-content-center p-3">
+                    <p className="text-danger fw-semibold mb-1">{stage.label}</p>
+                    <h5 className="fw-bold">{stage.title}</h5>
+                    <p className="text-muted small">{stage.desc}</p>
+                  </div>
+                   {/* Image */}
                   <div className="col-5 text-center d-flex align-items-center">
                     <img
                       src={stage.img}
@@ -58,12 +65,6 @@ const CareerStages = () => {
                       className="img-fluid rounded-start"
                       style={{ height: "100%", objectFit: "cover" }}
                     />
-                  </div>
-                  {/* Text */}
-                  <div className="col-7 d-flex flex-column justify-content-center p-3">
-                    <p className="text-danger fw-semibold mb-1">{stage.label}</p>
-                    <h5 className="fw-bold">{stage.title}</h5>
-                    <p className="text-muted small">{stage.desc}</p>
                   </div>
                 </div>
               </div>

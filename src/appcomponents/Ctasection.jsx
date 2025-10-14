@@ -1,7 +1,7 @@
 
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
-
+import { NavLink } from "react-router-dom";
 const Ctasection = () => {
   return (
     <section
@@ -28,13 +28,17 @@ const Ctasection = () => {
 
           {/* Right side buttons */}
           <div className="col-md-4 d-flex flex-column gap-3 text-md-end text-center">
-            <button className=" btn btn-light fw-bold rounded-4 shadow-sm py-3 ms-3">
-              
+           
+           <NavLink 
+        to="/CareerForm">
+<button className="btn btn-light fw-bold rounded-4 shadow-sm py-3 w-100">              
               Get My Free Career Report
             </button>
-            <button className=" btn btn-outline-light fw-bold rounded-4 shadow-sm py-3 ms-3">
-              View Sample Report
+              </NavLink>
+                <button className="btn btn-outline-light fw-bold rounded-4 shadow-sm py-3 w-100">
+               View Sample Report
             </button>
+          
           </div>
         </div>
       </div>

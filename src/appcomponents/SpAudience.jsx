@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { NavLink } from "react-router-dom";
 
 export default function SpAudience() {
   return (
@@ -17,6 +18,8 @@ export default function SpAudience() {
         Get My Free Career Report
       </button> */}
 
+       <NavLink 
+        to="/CareerForm">
        <button  
   className="btn btn-lg fw-semibold py-3 ms-3"
   style={{
@@ -39,7 +42,7 @@ export default function SpAudience() {
 >
   Get My Free Career Report
 </button>
-
+</NavLink>
     </div>
   );
 }

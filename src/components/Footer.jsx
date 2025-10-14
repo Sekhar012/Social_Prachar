@@ -11,7 +11,7 @@ import {
 
 const Footer = () => {
   return (
-    <footer className="py-4 my-5" style={{ background: "#f8f9fa" }}>
+    <footer className="py-4 my-5" style={{ background: "#f7f9fbff" }}>
       <div className="container">
         <div className="row text-dark">
           {/* Logo & Secure Payments */}

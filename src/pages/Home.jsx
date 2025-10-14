@@ -31,8 +31,8 @@ export default function Home() {
       <Footer/>
 
 
-      <h2>Career Switch Tool</h2>
-      <CareerForm />
+      {/* <h2>Career Switch Tool</h2>
+      <CareerForm /> */}
 
       
     </div>

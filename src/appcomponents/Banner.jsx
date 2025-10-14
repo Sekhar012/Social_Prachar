@@ -1,6 +1,6 @@
 
 import React from "react";
-
+import { NavLink } from "react-router-dom";
 const Banner = () => {
   return (
     <div className="text-center py-5 bg-white">
@@ -23,6 +23,8 @@ const Banner = () => {
         {/* <button className="btn btn-warning btn-lg fw-semibold">
           Get My Free Career Report
         </button> */}
+        <NavLink 
+        to="/CareerForm">
         <button 
   className="btn btn-lg fw-semibold py-3 ms-3"
   style={{
@@ -41,10 +43,11 @@ const Banner = () => {
     e.target.style.boxShadow = "none";
     e.target.style.color = "#242021ff"; 
     e.target.style.background= "linear-gradient(90deg, #ed6494ff, #a3bfe3ff)";
-  }}
->
+  }}>
+
   Get My Free Career Report
 </button>
+</NavLink>
           <img
             src="/src/assets/1.jpg"
             // height="600px"

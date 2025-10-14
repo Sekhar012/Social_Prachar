@@ -1,5 +1,6 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import { NavLink } from "react-router-dom";
 
 export default function Features() {
   return (
@@ -20,28 +21,32 @@ export default function Features() {
         Get My Free Career Report
       </button> */}
 
-       <button  
-  className="btn btn-lg fw-semibold py-3 ms-3"
-  style={{
-    background: "linear-gradient(90deg, #ed6494ff, #a3bfe3ff)",
-    color: "#242021ff",
-    transition: "transform 0.2s, box-shadow 0.2s"
-  }}
-  onMouseEnter={e => {
-    e.target.style.transform = "scale(1.05)";
-    e.target.style.boxShadow = "0 5px 15px rgba(22, 6, 247, 0.3)";
-    e.target.style.color = "#f40808ff"; 
-    e.target.style.background = "#e7d998ff";
-}}
-  onMouseLeave={e => {
-    e.target.style.transform = "scale(1)";
-    e.target.style.boxShadow = "none";
-    e.target.style.color = "#242021ff"; 
-    e.target.style.background= "linear-gradient(90deg, #ed6494ff, #a3bfe3ff)";
-  }}
->
-  Get My Free Career Report
-</button>
+
+      <NavLink
+        to="/CareerForm">
+        <button
+          className="btn btn-lg fw-semibold py-3 ms-3"
+          style={{
+            background: "linear-gradient(90deg, #ed6494ff, #a3bfe3ff)",
+            color: "#242021ff",
+            transition: "transform 0.2s, box-shadow 0.2s"
+          }}
+          onMouseEnter={e => {
+            e.target.style.transform = "scale(1.05)";
+            e.target.style.boxShadow = "0 5px 15px rgba(22, 6, 247, 0.3)";
+            e.target.style.color = "#f40808ff";
+            e.target.style.background = "#e7d998ff";
+          }}
+          onMouseLeave={e => {
+            e.target.style.transform = "scale(1)";
+            e.target.style.boxShadow = "none";
+            e.target.style.color = "#242021ff";
+            e.target.style.background = "linear-gradient(90deg, #ed6494ff, #a3bfe3ff)";
+          }}
+        >
+          Get My Free Career Report
+        </button>
+      </NavLink>
 
     </div>
   );

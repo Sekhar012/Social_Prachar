@@ -1,6 +1,7 @@
 import React from "react";
 import { Navbar, Nav, NavDropdown, Button, Container } from "react-bootstrap";
 import "bootstrap/dist/css/bootstrap.min.css";
+import img1 from "../../public/logo.webp"
 
 const AppNavbar = () => {
   return (
@@ -14,7 +15,7 @@ const AppNavbar = () => {
         {/* Brand */}
         <Navbar.Brand href="#home" className="d-flex align-items-center">
           <img
-            src="/public/logo.webp"
+            src={img1}
             width="100"
             height="40"
             className="d-inline-block align-top"

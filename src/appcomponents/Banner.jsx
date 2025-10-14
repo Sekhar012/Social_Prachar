@@ -1,6 +1,7 @@
 
 import React from "react";
 import { NavLink } from "react-router-dom";
+import img2 from "../../public/1.jpg"
 
 const Banner = () => {
   return (
@@ -50,7 +51,7 @@ const Banner = () => {
 </button>
 </NavLink>
           <img
-            src="/public/1.jpg"
+            src={img2}
             // height="600px"
             // width="90%"
             alt="Social Prachar"

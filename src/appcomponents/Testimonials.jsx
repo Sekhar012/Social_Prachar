@@ -2,6 +2,8 @@ import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
 import { NavLink } from "react-router-dom";
 import { FaStar } from "react-icons/fa";
+import img20 from "../../public/Test_imgs.jpeg";
+import img21 from "../../public/test_imgs1.jpeg"
 const Testimonials = () => {
   const feedbacks = [
     {
@@ -10,7 +12,7 @@ const Testimonials = () => {
       
       name: "Mahesh Channa",
       role: "AI Digital Creator & Online Content Strategist | Content Developer at Heartfulness Institute",
-      image: "/src/assets/Test_imgs.jpeg", // replace with real image
+      image: img20, // replace with real image
     },
     {
       id: 2,
@@ -18,7 +20,7 @@ const Testimonials = () => {
       
       name: "Rajasekhar Gondu",
       role: "Software Engineer",
-      image: "/src/assets/test_imgs1.jpeg", // replace with real image
+      image: img21, // replace with real image
     },
    
   ];

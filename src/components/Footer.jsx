@@ -1,5 +1,7 @@
 import React from "react";
 import "bootstrap/dist/css/bootstrap.min.css";
+import img8 from "../../public/logo.webp"
+
 import {
   FaFacebook,
   FaTwitter,
@@ -18,7 +20,7 @@ const Footer = () => {
           <div className="col-md-3 mb-4">
             
             <img
-                src="/public/logo.webp"
+                src={img8}
                 alt="Razorpay"
                 width="150"
                 height="50"

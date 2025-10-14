@@ -6,13 +6,13 @@ const SecuritySection = () => {
     {
       id: 1,
       title: "Your Privacy Matters",
-      img: "/src/assets/ds1.jpeg", // replace with your shield icon
+      img: "/public/ds1.jpeg", // replace with your shield icon
       desc: "Social Prachar is privacy-led. We only use your data to create your bespoke Social Prachar Report and make your experience on partner platforms seamless. We never sell it to third parties or use it for advertising.",
     },
     {
       id: 2,
       title: "Secure Payments",
-      img: "/src/assets/ds2.jpeg", // replace with your lock icon
+      img: "/public/ds2.jpeg", // replace with your lock icon
       desc: "All transactions are protected using industry leaders Razorpay (India) and Stripe (all other countries). Our website is SSL-certified, ensuring end-to-end encryption for all your interactions.",
     },
   ];

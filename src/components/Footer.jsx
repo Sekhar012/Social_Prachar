@@ -18,7 +18,7 @@ const Footer = () => {
           <div className="col-md-3 mb-4">
             
             <img
-                src="/src/assets/logo.webp"
+                src="/public/logo.webp"
                 alt="Razorpay"
                 width="150"
                 height="50"

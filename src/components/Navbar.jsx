@@ -14,7 +14,7 @@ const AppNavbar = () => {
         {/* Brand */}
         <Navbar.Brand href="#home" className="d-flex align-items-center">
           <img
-            src="/src/assets/logo.webp"
+            src="/public/logo.webp"
             width="100"
             height="40"
             className="d-inline-block align-top"

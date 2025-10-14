@@ -50,7 +50,7 @@ const Banner = () => {
 </button>
 </NavLink>
           <img
-            src="/src/assets/1.jpg"
+            src="/public/1.jpg"
             // height="600px"
             // width="90%"
             alt="Social Prachar"

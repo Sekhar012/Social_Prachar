@@ -9,14 +9,16 @@ export default function CareerFormWithResume() {
   const [submitted, setSubmitted] = useState(null);
   const [dragOver, setDragOver] = useState(false);
 
- // Load saved data from localStorage
+  // Load saved data from localStorage
   useEffect(() => {
     const savedText = localStorage.getItem("careerText");
     const savedResume = localStorage.getItem("careerResume");
+
     if (savedText) setText(savedText);
     if (savedResume) {
       const parsedResume = JSON.parse(savedResume);
       setResume(parsedResume);
+
       if (savedText || parsedResume) {
         const lines = savedText
           ? savedText.trim().split("\n").filter(Boolean)
@@ -40,17 +42,14 @@ export default function CareerFormWithResume() {
   };
 
   const handleFile = async (file) => {
-    // ✅ Updated allowed types
     const allowedTypes = [
       "application/pdf",
       "application/msword",
       "application/vnd.openxmlformats-officedocument.wordprocessingml.document",
-      "image/jpeg",
-      "image/png",
     ];
 
     if (!allowedTypes.includes(file.type)) {
-      setError("Only PDF, Word, or image files (JPG/PNG) are allowed.");
+      setError("Only PDF or Word documents are allowed for resume.");
       setResume(null);
       return;
     }
@@ -87,18 +86,21 @@ export default function CareerFormWithResume() {
     e.preventDefault();
     const lines = text.trim().split("\n").filter(Boolean);
 
+    // ❌ Cannot submit both
     if (text && resume) {
-      setError("Please provide either text OR upload a resume/image, not both.");
+      setError("Please provide either text OR upload a resume, not both.");
       setSubmitted(null);
       return;
     }
 
+    // ❌ Must provide at least one
     if (!resume && !text) {
-      setError("Please enter text or upload a file.");
+      setError("Please enter text or upload a resume.");
       setSubmitted(null);
       return;
     }
 
+    // ✅ Validate text only if entered
     if (text) {
       if (lines.length > 0 && lines.length <= 5) {
         setError("Text must have more than 5 lines.");
@@ -113,6 +115,7 @@ export default function CareerFormWithResume() {
       }
     }
 
+    // Save to localStorage
     if (text) localStorage.setItem("careerText", text);
     else localStorage.removeItem("careerText");
 
@@ -139,7 +142,7 @@ export default function CareerFormWithResume() {
         {/* Textarea */}
         <Form.Group>
           <Form.Label>
-            Enter Text (optional, greater than 5 lines, 1000–2000 chars)
+            Enter Text (optional, greater than 5 lines, 1000-2000 chars)
           </Form.Label>
           <Form.Control
             as="textarea"
@@ -150,11 +153,11 @@ export default function CareerFormWithResume() {
           />
         </Form.Group>
 
-        {/* File Upload Section */}
+        {/* Drag-and-drop Resume Upload */}
         <Form.Group className="mt-3">
           <Form.Label>
-            <span style={{ color: "red" }}>[ OR ] </span> Upload Resume / Image
-            (PDF, Word, JPG, PNG)
+            <span style={{ color: "red" }}>[ OR ] </span> Upload Your Resume
+            (optional, PDF or Word)
           </Form.Label>
           <div
             onDragOver={handleDragOver}
@@ -172,11 +175,10 @@ export default function CareerFormWithResume() {
           >
             {resume
               ? resume.name
-              : "Drag & Drop your file here, or click to select"}
+              : "Drag & Drop your resume here, or click to select"}
             <Form.Control
               type="file"
               id="resumeUpload"
-              accept=".pdf,.doc,.docx,.png,.jpg,.jpeg"
               onChange={handleFileChange}
               style={{ display: "none" }}
             />
@@ -216,23 +218,9 @@ export default function CareerFormWithResume() {
             </>
           )}
           {submitted.resume && (
-            <div>
-              <p>
-                <strong>Uploaded File:</strong> {submitted.resume.name}
-              </p>
-              {/* ✅ Show image preview if image file */}
-              {submitted.resume.type.startsWith("image/") && (
-                <img
-                  src={submitted.resume.data}
-                  alt="Uploaded Preview"
-                  style={{
-                    maxWidth: "200px",
-                    borderRadius: "8px",
-                    border: "1px solid #ccc",
-                  }}
-                />
-              )}
-            </div>
+            <p>
+              <strong>Uploaded Resume:</strong> {submitted.resume.name}
+            </p>
           )}
         </div>
       )}

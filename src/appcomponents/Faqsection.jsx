@@ -7,17 +7,17 @@ const Faqsection = () => {
   const faqs = [
     {
       id: 1,
-      question: "How do I get started with a Social Prachar Report?",
+      question: "How do I get started with a SocialHire Report?",
       answer:"You can begin by uploading your CV, importing your Kalido or LinkedIn Profile data, or using the built-in Resume Builder. Then simply personalize your Report by specifying location or career preferences."
     },
     {
       id: 2,
-      question: "Can I see a sample Social Prachar Report before purchasing?",
+      question: "Can I see a sample SocialHire Report before purchasing?",
       answer:"Yes, you can view a sample Report to understand what’s included and how it works.View Sample Report "
     },
     {
       id: 3,
-      question: "Is the Social Prachar Report suitable for all career stages?",
+      question: "Is the SocialHire Report suitable for all career stages?",
       answer:
         "Yes! The Report is designed to support professionals at any stage, whether you’re just starting out, looking to transition, or preparing for a leadership position.",
     },
@@ -28,18 +28,18 @@ const Faqsection = () => {
     },
     {
       id: 5,
-      question: "How accurate is a Social Prachar Report?",
-      answer:"A Social Prachar Report combines advanced analytics with industry insights to give you actionable career guidance. We analyse your professional history, current skill set, and potential growth trajectories against current market demands and future industry trends.While our analysis leverages powerful AI to process complex career data and market trends, we recommend using these insights as one of several inputs to your career planning. Our predictions and recommendations should be considered alongside your personal experience, professional judgment, and consultation with industry mentors.",
+      question: "How accurate is a SocialHire Report?",
+      answer:"A SocialHire Report combines advanced analytics with industry insights to give you actionable career guidance. We analyse your professional history, current skill set, and potential growth trajectories against current market demands and future industry trends.While our analysis leverages powerful AI to process complex career data and market trends, we recommend using these insights as one of several inputs to your career planning. Our predictions and recommendations should be considered alongside your personal experience, professional judgment, and consultation with industry mentors.",
     },
     {
       id: 6,
-      question: "How long does it take to generate my Social Prachar Report?",
+      question: "How long does it take to generate my SocialHire Report?",
       answer:"Once you upload your information and customise your preferences, the Report is generated within minutes.",
     },
     {
       id: 7,
-      question: "Can I generate more than one Social Prachar Report?",
-      answer:"Yes, you can generate multiple Social Prachar Reports. Update your information or preferences at any time to create a new Report with fresh insights and recommendations..",
+      question: "Can I generate more than one SocialHire Report?",
+      answer:"Yes, you can generate multiple SocialHire Reports. Update your information or preferences at any time to create a new Report with fresh insights and recommendations..",
     },
    {
   id: 8,
@@ -51,7 +51,7 @@ const Faqsection = () => {
         href="mailto:support@kalido.me"
         className=" text-primary fw-semibold"
       >
-       rajasekhar@grs.me
+       rajasekhargondu@grs.me
       </a>
       .
     </>

@@ -6,14 +6,13 @@ export default function CareerDecision() {
   return (
     <div className="container text-center py-2">
       {/* Header Section */}
-      <h2 className="text-primary mb-3">About Social Prachar</h2>
+      <h2 className="text-primary mb-3">About SocialHire</h2>
       <h1 className="display-5 fw-bold mb-3">
-        Making Career Decisions in the Dark?
+        Still Making Career Choices Without Clarity?
       </h1>
       <p className="text-muted mx-auto mb-4" style={{ maxWidth: "700px" }}>
-        The Social prachar Report analyzes your CV against real-time market data to deliver a
-        personalized career roadmap. Thousands of professionals have used these insights to
-        secure better opportunities and future-proof their careers—all for just INR 299.
+         SocialHire’s AI-powered Career Report evaluates your resume against real-time market trends and hiring data to create a personalized roadmap for your career growth.
+ Thousands of professionals have already used SocialHire insights to land better roles, close skill gaps, and future-proof their careers — all for just ₹299.
       </p>
       {/* <a href="#" className="fw-semibold text-warning fs-5 mb-5 d-block text-decoration-none">
         View Sample Report
@@ -47,8 +46,8 @@ export default function CareerDecision() {
             <div className="card-body text-center p-4">
               <Grid3x3Gap className="text-info mb-3" size={40} />
               <p className="text-dark mb-0">
-                Get your personalized Report in just <br />
-                <span className="fw-semibold">10 minutes with 3 simple steps.</span>
+                Get Your Personalized Career Report in Just 10 Minutes <br />
+                <span className="fw-semibold"> in 3 Easy Steps!</span>
               </p>
             </div>
           </div>
@@ -60,8 +59,9 @@ export default function CareerDecision() {
             <div className="card-body text-center p-4">
               <LightningChargeFill className="text-info mb-3" size={40} />
               <p className="text-dark mb-0">
-                Personalize your results based on <br />
-                <span className="fw-semibold">location, industry, and career goals.</span>
+                 Tailor your report based on your 
+                <span className="fw-semibold">location, industry, and career goals,</span>
+               and receive actionable insights designed just for you.
               </p>
             </div>
           </div>
@@ -73,8 +73,9 @@ export default function CareerDecision() {
             <div className="card-body text-center p-4">
               <Cpu className="text-info mb-3" size={40} />
               <p className="text-dark mb-0">
-                Explore job matches and courses <br />
-                <span className="fw-semibold">across 3 potential career tracks.</span>
+                Discover
+                <span className="fw-semibold">job opportunities and learning paths </span>
+              across three potential career tracks that align perfectly with your growth journey.
               </p>
             </div>
           </div>

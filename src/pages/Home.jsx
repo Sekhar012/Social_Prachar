@@ -1,17 +1,17 @@
-import CareerForm from "../components/CareerForm";
-import Banner from "../appcomponents/Banner";
+// import CareerForm from "../components/CareerForm";
 import CareerDecision from "../appcomponents/CareerDecision";
 import Features from "../appcomponents/Features";
 import Cards from "../appcomponents/Cards";
 import SpAudience from "../appcomponents/SpAudience";
-import SecuritySection from "../appcomponents/SecuritySection";
+// import SecuritySection from "../appcomponents/SecuritySection";
 import CareerStages from "../appcomponents/CareerStages";
-import About from "../appcomponents/About";
+// import About from "../appcomponents/About";
 import Testimonials from "../appcomponents/Testimonials";
 import Faqsection from "../appcomponents/Faqsection";
 import Ctasection from "../appcomponents/Ctasection";
-import Footer from "../components/Footer";
+// import Footer from "../components/Footer";
 import CareerBlueprint from "../appcomponents/CareerBlueprint";
+import Banner from "../appcomponents/Banner";
 
 export default function Home() {
   return (
@@ -20,19 +20,16 @@ export default function Home() {
       <CareerDecision/>
        <Features/>
        < Cards/>
-       <SecuritySection/>
+       {/* <SecuritySection/> */}
        <SpAudience/>
        <CareerStages/>
        <CareerBlueprint/>
-       <About/>
+       {/* <About/> */}
        <Testimonials/>
       <Faqsection/>
       <Ctasection/>
-      <Footer/>
+      {/* <Footer/> */}
 
-
-      {/* <h2>Career Switch Tool</h2>
-      <CareerForm /> */}
 
       
     </div>

@@ -6,12 +6,14 @@ export default function SpAudience() {
   return (
     <div className="container text-center py-5">
       {/* Header Section */}
-      <h2 className="text-primary mb-3 py-3">Who is Social Prachar meant for?</h2>
+      <h2 className="text-primary mb-3 py-3">Who is SocialHire Meant For?</h2>
       <h1 className="display-4 fw-bold mb-4">
-       Career Intelligence at Every Step
+       Career Intelligence for Every Stage of Your Journey
       </h1>
       <p className="text-muted mb-3 mx-auto" style={{ maxWidth: "750px" }}>
-        Social Prachar gives you tailored insights for your current career stage - whether you're just starting out, or ready for your next leadership role.
+       Whether you’re a <strong>student taking your first career step, </strong> a <strong>professional looking to upskill, </strong>
+        or a <strong>leader planning your next move, </strong> SocialHire delivers <strong>personalized insights </strong> 
+        and guidance tailored to where you are — and where you want to go next.
       </p>
       
       {/* <button className="btn btn-warning text-white fw-semibold px-4 py-2 rounded-3">

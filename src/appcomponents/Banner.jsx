@@ -1,23 +1,23 @@
 
 import React from "react";
 import { NavLink } from "react-router-dom";
-import img2 from "../../public/1.jpg"
+import img2 from "../../public/career.png"
 
 const Banner = () => {
   return (
     <div className="text-center py-5 bg-white">
       {/* Heading */}
       <h1 className="display-4 fw-bold text-danger">
-        Receive a <span className="text-warning">Customized Career Report in </span>
-        <br></br><span className="text-success">10 Minutes 🚀</span>
+        Get Your Personalized <span className="text-warning">Career Growth Report in </span>
+        <br></br><span className="text-success">Just 10 Minutes </span>
       </h1>
 
       {/* Description */}
       <p className="lead mx-auto text-muted w-75 fw-bold fs-4 py-4">
-        Our platform converts your resume into a step-by-step growth plan.
-        We review your career journey, suggest learning paths to strengthen
-        weak areas, provide guidance to stay ahead in the AI era, and connect
-        you with job opportunities tailored to your current stage.
+       Transform your resume into a clear, step-by-step roadmap for success.
+        Our AI-powered platform analyzes your current career profile, identifies skill gaps,
+         recommends targeted learning paths, and guides you on how to stay ahead in the AI-driven
+         job market — all while matching you with roles that fit your journey.
       </p>
 
       {/* Button */}

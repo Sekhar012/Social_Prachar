@@ -7,13 +7,14 @@ const CareerBlueprint = () => {
       <div className="row align-items-center">
         {/* Left Section */}
         <div className="col-md-6 mb-4 py-2">
-          <h2 className="text-primary">How Social Prachar works</h2>
+          <h2 className="text-primary">How SocialHire Works</h2>
           <h1 className="fw-bold">
-            From CV to <br /> Career Blueprint <br /> in Minutes
+            Turn Your Resume into a Career Blueprint — in Minutes
           </h1>
           <p className="text-muted">
-            Getting your personalized career Report is quick and easy — just
-            follow these simple steps.
+            Getting your personalized Career Report is simple and fast.
+ Upload your resume, let our AI analyze it, and receive a <strong>custom roadmap </strong> 
+ with insights, learning paths, and job matches — all in just a few minutes.
           </p>
           {/* <button className="btn btn-warning fw-bold">
             Get My Free Career Report
@@ -58,9 +59,10 @@ const CareerBlueprint = () => {
             </div>
             <div>
               <h6 className="text-danger">Step 1</h6>
-              <h2 className="fw-bold">Upload Your CV or Build One with AI</h2>
+              <h2 className="fw-bold">Upload or Create Your Resume with AI</h2>
               <p className="text-muted mb-0">
-                Start by uploading your current resume or building a new one with our AI-powered CV builder. Our intelligent system analyzes your experience, skills, and career trajectory.
+               Upload your existing resume or build a new one instantly using our <strong> AI-powered CV Builder. </strong>
+                Our system intelligently reviews your skills, experience, and career history to understand where you stand today.
               </p>
             </div>
           </div>
@@ -74,11 +76,11 @@ const CareerBlueprint = () => {
             </div>
             <div>
               <h6 className="text-danger">Step 2</h6>
-              <h2 className="fw-bold">Add Your Preferences</h2>
+              <h2 className="fw-bold"> Set Your Preferences </h2>
               <p className="text-muted mb-0">
-                Tell us about your preferred locations and the types of roles
-                you're interested in to help us tailor your Report in terms of
-                salary expectations and suggested paths.
+                Share your <strong>desired job roles, locations, and career goals. </strong> 
+                This helps us personalize your report with accurate salary benchmarks, role recommendations,
+                 and learning pathways tailored just for you.
               </p>
             </div>
           </div>
@@ -91,9 +93,11 @@ const CareerBlueprint = () => {
             </div>
             <div>
               <h6 className="text-danger">Step 3</h6>
-              <h2 className="fw-bold">Get Your Personalized Report</h2>
+              <h2 className="fw-bold"> Receive Your Personalized Career Report</h2>
               <p className="text-muted mb-0">
-                Our advanced AI analyzes your information against current market data to generate a comprehensive Report with actionable insights
+Our advanced AI analyzes your profile against <strong>real-time market data </strong> to generate a 
+<strong> detailed career roadmap </strong>
+ packed with insights, upskilling suggestions, and growth strategies. 
               </p>
             </div>
           </div>
@@ -108,7 +112,8 @@ const CareerBlueprint = () => {
               <h6 className="text-danger">Step 4</h6>
               <h2 className="fw-bold">Take Action & Level Up</h2>
               <p className="text-muted mb-0">
-                Use your LvLUP Report's strategic recommendations and course suggestions to enhance your skills, update your resume, and apply for job opportunities.
+                Put your <strong> SocialHire Report </strong> to work — follow the strategic recommendations,
+                 take suggested courses, refine your resume, and start applying for job opportunities with confidence.
               </p>
             </div>
           </div>

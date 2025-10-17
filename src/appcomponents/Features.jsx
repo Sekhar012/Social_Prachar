@@ -6,16 +6,17 @@ export default function Features() {
   return (
     <div className="container text-center py-5">
       {/* Header Section */}
-      <h2 className="text-primary mb-3 py-3">Features of Social Prachar</h2>
+      <h2 className="text-primary mb-3 py-3">Features of SocialHire</h2>
       <h1 className="display-4 fw-bold mb-4">
-        Why Social Prachar ? Career Clarity <br /> When You Need It Most
+        Why SocialHire? Get Career Clarity When It Matters Most
       </h1>
       <p className="text-muted mb-3 mx-auto" style={{ maxWidth: "750px" }}>
-        Social Prachar offers comprehensive insights - built from real-time market data - to help you
-        navigate your career with confidence. All for a one-time fee of just INR 299!
+       SocialHire provides <span className="fw-semibold"> data-backed career insights </span> tailored to your unique journey.
+ Our AI-driven analysis uses <span className="fw-semibold"> real-time market data </span> to guide you toward the right opportunities, skills, and learning paths — empowering you to make confident career moves.
+ All this, for a <span className="fw-semibold"> one-time fee of just ₹299.</span>
       </p>
       <p className="text-muted mb-4">
-        Curious about what you'll get? <a href="#" className="text-warning fw-semibold text-decoration-none">View Sample Report</a>
+        👉 Curious to see what your report looks like? <a href="#" className="text-warning fw-semibold text-decoration-none">View Sample Report</a>
       </p>
       {/* <button className="btn btn-warning text-white fw-semibold px-4 py-2 rounded-3">
         Get My Free Career Report

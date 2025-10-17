@@ -28,9 +28,9 @@ const Testimonials = () => {
   return (
     <div className="container text-center my-5">
       {/* Section Heading */}
-      <h2 className="text-primary fw-bold">Social Prachar Testimonials</h2>
+      <h2 className="text-primary fw-bold">SocialHire Testimonials</h2>
       <h1 className="fw-bold mt-2">
-        What <span className="text-dark">Social Prachar Customers are </span > <span> Saying </span>
+        What <span className="text-dark">SocialHire Customers are </span > <span> Saying </span>
       </h1>
       <p className="text-muted mt-3">
         Real experiences from people who have used LvLUP to transform their

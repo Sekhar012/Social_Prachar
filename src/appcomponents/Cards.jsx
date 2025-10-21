@@ -27,7 +27,7 @@ const products = [
 const Cards = () => {
   return (
     <div className="container my-5 py-2">
-      <h2 className="text-center fw-bold mb-5 text-primary">Social Prachar Features</h2>
+      <h2 className="text-center fw-bold mb-5 text-primary">Features</h2>
       <div className="row g-4 py-2">
         {products.map((product) => (
           <div className="col-lg-4 col-md-6 col-sm-12" key={product.id}>

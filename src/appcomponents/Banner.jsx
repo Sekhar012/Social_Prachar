@@ -8,7 +8,7 @@ const Banner = () => {
     <div className="text-center py-5 bg-white">
       {/* Heading */}
       <h1 className="display-4 fw-bold text-danger">
-        Get Your Personalized <span className="text-warning">Career Growth Report in </span>
+        Get Your Personalized Career Growth Report in
         <br></br><span className="text-success">Just 10 Minutes </span>
       </h1>
 
@@ -28,7 +28,7 @@ const Banner = () => {
         <NavLink 
         to="/CareerForm">
         <button 
-  className="btn btn-lg fw-semibold py-3 ms-3"
+  className="btn btn-lg fw-semibold py-3 my-3"
   style={{
     background: "linear-gradient(90deg, #ed6494ff, #a3bfe3ff)",
     color: "#242021ff",
@@ -55,7 +55,7 @@ const Banner = () => {
             // height="600px"
             // width="90%"
             alt="Social Prachar"
-            className="img-fluid w-100"
+            className="img-fluid w-100 my-2"
             />
       </div>
     </div>

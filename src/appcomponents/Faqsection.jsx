@@ -51,7 +51,7 @@ const Faqsection = () => {
         href="mailto:support@kalido.me"
         className=" text-primary fw-semibold"
       >
-       rajasekhargondu@grs.me
+       rajasekhargondu@grs.com
       </a>
       .
     </>

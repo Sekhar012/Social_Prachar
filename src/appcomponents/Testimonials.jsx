@@ -16,7 +16,7 @@ const Testimonials = () => {
     },
     {
       id: 2,
-      text:"I didn't expect my Report to be this clear and helpful! Learning which skills might be replaced by AI and the new skills I should learn really made me think about upskilling. The suggested career path matched well with my resume, and showed the potential salary I could expect for different roles — which was super useful! The Report gave me a focused plan that highlighted the challenges I might face. I had been unsure about my future, but now I feel confident about what to do next. I’m excited about my growth and learning journey! If you're looking for career guidance, I recommend LvLUP - it feels like having a mentor.",
+      text:"I didn't expect my Report to be this clear and helpful! Learning which skills might be replaced by AI and the new skills I should learn really made me think about upskilling. The suggested career path matched well with my resume, and showed the potential salary I could expect for different roles — which was super useful! The Report gave me a focused plan that highlighted the challenges I might face. I had been unsure about my future, but now I feel confident about what to do next. I’m excited about my growth and learning journey! If you're looking for career guidance, I recommend SocialHire - it feels like having a mentor.",
       
       name: "Rajasekhar Gondu",
       role: "Software Engineer",
